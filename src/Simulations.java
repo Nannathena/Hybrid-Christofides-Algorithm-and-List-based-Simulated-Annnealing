@@ -86,7 +86,7 @@ public class Simulations {
 		java.io.File[] files = dir.listFiles();//list file yang ada pada folder yang diarahkan oleh filepath
 		String pathName = filePath.substring(filePath.lastIndexOf("/", filePath.length()-2)).substring(1);
 		pathName = pathName.substring(0, pathName.length()-1);//membaca file satu persatu
-		String fileName = (new File("D:/DOWNLOAD/ELBSA/ELBSA4TSP-master/")).getAbsolutePath() + "\\results\\Performance\\";
+		String fileName = (new File("D:/DOWNLOAD/ELBSA/HCALBSA_TSP/")).getAbsolutePath() + "\\results\\Performance\\";
 		fileName += pathName + "-" + Simulations.getParaSetting() + " results 100000-2.csv";//memberi nama file untuk disimpan hasilnya
 		System.out.println("pathName: " + pathName);
         System.out.println("fileName2: " + fileName);
@@ -262,7 +262,7 @@ public class Simulations {
 	private static void saveTour( Solution2 s) {//menyimpan tour sesuai dengan koordinatnya kedalam file dalam bentuk CSV
 		File file = new File(Problems.getFileName());
 		//nama file
-		String fileName = (new File("D:/DOWNLOAD/ELBSA/ELBSA4TSP-master/")).getAbsolutePath() + "\\results\\" + file.getName();
+		String fileName = (new File("D:/DOWNLOAD/ELBSA/HCALBSA_TSP/")).getAbsolutePath() + "\\results\\" + file.getName();
 		System.out.println("filename :"+fileName);
 		try {
 			PrintWriter printWriter = new PrintWriter(new FileWriter(fileName + "-tour.csv"));//tour
