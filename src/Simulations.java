@@ -8,11 +8,11 @@ public class Simulations {
 
 	public static void main(String[] args) {
 		Problems.setNearCityParameters(Simulations.nearCityNumber);
-		String filePath = (new File("D:/DOWNLOAD/ELBSA/ELBSA4TSP-master/")).getAbsolutePath() + "/data/TSPLarge26/"; 
+		String filePath = (new File("D:/DOWNLOAD/ELBSA/HCALBSA_TSP/")).getAbsolutePath() + "/data/TSP_32DATA/"; 
 		//Untuk filepath berada
 		if (Simulations.TEST_TYPE == ETestType.SINGLE_INSTANCE) {
-			filePath = (new File("D:/DOWNLOAD/ELBSA/ELBSA4TSP-master/")).getAbsolutePath() + "/data/TSPLarge26/";
-			String fileName = filePath+"01dsj1000.txt";
+			filePath = (new File("D:/DOWNLOAD/ELBSA/HCALBSA_TSP/")).getAbsolutePath() + "/data/TSP_32DATA/";
+			String fileName = filePath+"07dsj1000.txt";
 			System.out.println("\nTEST 1:");
 			testSingleInstance(fileName);
 			//Untuk test satu buah dataset
@@ -21,7 +21,7 @@ public class Simulations {
 			testPerformance(filePath);
 			//Untuk test lebih dari satu buah dataset
 		} else if (Simulations.TEST_TYPE == ETestType.PARAMETER_TUNING) {
-			System.out.println("\nTEST 5:");
+			System.out.println("\nTEST 3:");
 			parametersTunning(filePath);
 			//test VMCL dan daftar temperatur yang tepat dalam menentukan hasil
 		}
@@ -31,7 +31,7 @@ public class Simulations {
 	private static void parametersTunning(String filePath) {
 		java.io.File dir = new java.io.File(filePath);//Membaca filepath yang dimasukkan
 		java.io.File[] files = dir.listFiles();//list file pada filepath
-		String fileName = (new File("D:/DOWNLOAD/ELBSA/ELBSA4TSP-master/")).getAbsolutePath() + "\\results\\Parameters\\";
+		String fileName = (new File("D:/DOWNLOAD/ELBSA/HCALBSA_TSP/")).getAbsolutePath() + "\\results\\Parameters\\";
 		Simulations.selectionType = ESelectionType.RANDOM;//seleksi secara random
 		Simulations.selectionType = ESelectionType.SYSTEMATIC_SEQUENCE;//seleksi secara sistematis
 		fileName += "list-based SA-" + Simulations.selectionType + " parameter tunning results for 001 instances.csv";

@@ -320,7 +320,7 @@ public class MethodsforLBSA {
 
 	public static void main(String[] args) {
 		final int TIMES = 1;
-		String fileName = (new File("D:\\DOWNLOAD\\ELBSA\\ELBSA4TSP-master\\data")).getAbsolutePath() + "\\TSPLarge33\\05pcb1173.txt";
+		String fileName = (new File("D:\\DOWNLOAD\\ELBSA\\HCALBSA_TSP\\data")).getAbsolutePath() + "\\TSP_32DATA\\07dsj1000.txt";
 		Problems.setFileName(fileName);
 		Solution2 s;
 		double tourLength = 0;

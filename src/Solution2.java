@@ -671,7 +671,7 @@ public class Solution2 implements Comparable<Solution2> {
 
 	public static void main(String[] args) {
 		final int TIMES = 1;
-		String fileName = (new File("D:\\DOWNLOAD\\ELBSA\\ELBSA4TSP-master\\data")).getAbsolutePath() + "\\TSPLarge26\\01dsj1000.txt";
+		String fileName = (new File("D:\\DOWNLOAD\\ELBSA\\HCALBSA_TSP\\data")).getAbsolutePath() + "\\TSP_32DATA\\07dsj1000.txt";
 		//\\TSP_IDBA\\00oliver30.txt
 		Problems.setFileName(fileName);
 		Solution2 s;
