@@ -1,1 +1,1 @@
-### Simulation results of ELBSA algorithm
+### Simulation results of algorithm

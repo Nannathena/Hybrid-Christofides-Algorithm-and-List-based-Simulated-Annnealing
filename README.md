@@ -1,2 +1,2 @@
 # HCA_LBSA
-Source code for Hybrid Christofides Algorithm and List-based Simulated Annnealing for solving traveling salesman problem by Bayu Dewantoro (210803018) based on ELBSA test commit
+Source code for Hybrid Christofides Algorithm and List-based Simulated Annealing for solving traveling salesman problem by Bayu Dewantoro (210803018) based on [ELBSA by (Wang et al., 2019)](https://github.com/yiwzhong/ELBSA4TSP)

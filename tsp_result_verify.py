@@ -37,7 +37,7 @@ def plot_tour(solution, city_pos):
     
 if __name__ == "__main__":
     #read data from file
-    instance = "D:/DOWNLOAD/ELBSA/ELBSA4TSP-master/results/Plot/01dsj1000Christ.txt"
+    instance = "D:/DOWNLOAD/ELBSA/HCALBSA_TSP/results/Plot/01dsj1000Christ.txt"
     #instance = "./Results/35lin318.txt"
     file_name = instance + "-position.csv"
     position = np.genfromtxt(file_name, delimiter=",")
